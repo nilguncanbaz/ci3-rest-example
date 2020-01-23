@@ -6,7 +6,7 @@ class Users_model extends CI_Model {
 
 	public function __construct()
 	{
-		$this->guzzle = new GuzzleHttp\Client(["base_uri" => "https://reqres.in/api/"]);
+		$this->guzzle = new GuzzleHttp\Client(["base_uri" => "https://reqres.in/api/", "verify" => false]);
 	}
 
 	public function all($page){
@@ -23,7 +23,7 @@ class Users_model extends CI_Model {
 		}
 
 
-		return (object)["page" => 1, "total_page" => 1, "total" => 0, "data" => []];
+		return (object)["page" => 1, "total_pages" => 1, "total" => 0, "data" => []];
 	}
 
 	public function get($id){

@@ -6,7 +6,7 @@
 			<th>First Name</th>
 			<th>Last Name</th>
 			<th>E-Mail</th>
-			<th style="width: 140px"></th>
+			<th style="width: 200px"></th>
 		</tr>
 
 		<?php foreach ($users->data as $user) { ?>
@@ -15,12 +15,16 @@
 			<td><?=$user->last_name?></td>
 			<td><?=$user->email	?></td>
 			<td>
+				<a href="/users/<?=$user->id?>">
+					<button class="uk-button uk-button-success" type="button">Info</button>
+				</a>
 				<a href="/users/<?=$user->id?>/edit">
 					<button class="uk-button uk-button-primary" type="button">Edit</button>
 				</a>
 				<a href="/users/<?=$user->id?>/delete">
 					<button class="uk-button uk-button-danger" type="button">Delete</button>
 				</a>
+				
 			</td>
 		</tr>
 		<?php } ?>
