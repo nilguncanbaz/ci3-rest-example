@@ -1,0 +1,20 @@
+.container {
+	width: 1200px;
+	margin: 20px auto;
+}
+
+nav {
+	margin-bottom: 20px;
+}
+
+.add-form fieldset{
+	border-bottom: 1px solid #cacaca;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.add-form input[type=text],.add-form input[type=email] {
+	width: 100%
+}
+
+.users form{display: inline-block}
