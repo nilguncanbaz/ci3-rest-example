@@ -1,7 +1,7 @@
 <div class="uk-panel uk-panel-box">
 	<h3 class="uk-panel-title">Update User</h3>
 
-	<form class="uk-form add-form" action="http://localhost/nilguncanbaz.github.io/ci3-rest-example/users/<?=$user->id?>" method="POST">
+	<form class="uk-form add-form" action="/users/<?=$user->id?>" method="POST">
 		<fieldset>
 			<legend>First Name</legend>
 			<div class="uk-form-row">
