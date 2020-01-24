@@ -15,13 +15,13 @@
 			<td><?=$user->last_name?></td>
 			<td><?=$user->email	?></td>
 			<td>
-				<a href="/users/<?=$user->id?>">
+				<a href="http://localhost/nilguncanbaz.github.io/ci3-rest-example/users/<?=$user->id?>">
 					<button class="uk-button uk-button-success" type="button">Info</button>
 				</a>
-				<a href="/users/<?=$user->id?>/edit">
+				<a href="http://localhost/nilguncanbaz.github.io/ci3-rest-example/users/<?=$user->id?>/edit">
 					<button class="uk-button uk-button-primary" type="button">Edit</button>
 				</a>
-				<a href="/users/<?=$user->id?>/delete">
+				<a href="http://localhost/nilguncanbaz.github.io/ci3-rest-example/users/<?=$user->id?>/delete">
 					<button class="uk-button uk-button-danger" type="button">Delete</button>
 				</a>
 				
@@ -31,7 +31,7 @@
 	</table>
 
 	<?php for($i = 1; $i <= $users->total_pages; $i++){ ?>
-		<a href="/users?page=<?=$i?>">
+		<a href="http://localhost/nilguncanbaz.github.io/ci3-rest-example/users?page=<?=$i?>">
 			<button class="uk-button uk-button-primary"><?=$i?></button>
 		</a>
 	<?php } ?>

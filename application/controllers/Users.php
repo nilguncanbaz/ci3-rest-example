@@ -30,7 +30,7 @@ class Users extends MY_Controller
             $response = $this->users_model->add($first_name, $last_name, $email);
 
             if ($response) {
-                return $this->success("Successfully", "/users");
+                return $this->success("Successfully", "http://localhost/nilguncanbaz.github.io/ci3-rest-example/users");
             }
 
             return $this->error("Something went wrong!");
@@ -60,7 +60,7 @@ class Users extends MY_Controller
             $response = $this->users_model->update($id, $first_name, $last_name, $email);
 
             if ($response) {
-                return $this->success("Successfully", "/users");
+                return $this->success("Successfully", "http://localhost/nilguncanbaz.github.io/ci3-rest-example/users");
             }
 
             return $this->error("Something went wrong!");
@@ -74,7 +74,7 @@ class Users extends MY_Controller
         $response = $this->users_model->delete($id);
 
         if ($response) {
-            return $this->success("Successfully");
+            return $this->success("Successfully","http://localhost/nilguncanbaz.github.io/ci3-rest-example/users");
         }
 
         $this->error("Something went wrong!");
